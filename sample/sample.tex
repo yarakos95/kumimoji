@@ -1,0 +1,46 @@
+\documentclass[paper=b9paper]{jlreq}
+\usepackage{../kumimoji}
+\usepackage[active, tightpage]{preview}
+\newenvironment{widthpreview}{\preview\rule{\textwidth}{0pt}\vspace{-8pt}\center\centering}{\endcenter\endpreview}
+\begin{document}
+
+\begin{widthpreview}
+  \kumimoji{１２} %
+  \kumimoji{１２３} %
+  \kumimoji{１２３４} %
+  \kumimoji{１２３４５} %
+  \kumimoji{１２３４５６} %
+\end{widthpreview}
+
+\begin{widthpreview}
+  \kumimoji{ミリシーベルト}   %% 7 文字
+  \kumimoji{オングストローム} %% 8 文字
+\end{widthpreview}
+
+\begin{widthpreview}
+  \kumimoji[font = \gtfamily]{有限会社} %
+  \kumimoji[width = 1.5\zw]{オングストローム} %
+  \kumimoji[top = center]{木|木木} %
+  \kumimoji[width = 1.4\zw, top = left, bottom = right]{などなど} %
+\end{widthpreview}
+
+\begin{widthpreview}
+  \kumimoji{グラムトン}  %%
+  \kumimoji{グラム|トン} %% 区切り文字の指定あり
+\end{widthpreview}
+
+\begin{widthpreview}
+  \kumimoji{辻野さん} %%
+  \kumimoji{辻󠄀野さん} %% 異体字セレクタを含む
+\end{widthpreview}
+
+\begin{widthpreview}
+  \kumimoji{辻󠄀野|さん}[2, 2]
+\end{widthpreview}
+
+\begin{widthpreview}
+  \kumimoji*{令和} %
+  \kumimoji*{白亜紀} %
+\end{widthpreview}
+
+\end{document}
